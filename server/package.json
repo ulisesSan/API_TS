@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "promise-mysql": "^5.1.0"
+  }
+}
