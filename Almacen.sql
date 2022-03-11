@@ -16,6 +16,22 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `orden_salida`
+--
+
+DROP TABLE IF EXISTS `orden_salida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `orden_salida` (
+  `id_orden` int NOT NULL AUTO_INCREMENT,
+  `origen` int DEFAULT NULL,
+  `destino` varchar(50) DEFAULT NULL,
+  `fecha` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_orden`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `almacen`
 --
 
