@@ -10,6 +10,6 @@ const pool = promise_mysql_1.default.createPool(keys_1.default.database);
 pool.getConnection()
     .then(connection => {
     pool.releaseConnection(connection);
-    console.log('Conexion exitosa');
+    console.log(connection);
 });
 exports.default = pool;

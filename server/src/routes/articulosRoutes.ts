@@ -1,4 +1,5 @@
 import {Router} from 'express'
+import { articulosController} from '../controllers/articulos.controller'
 
 class ArticulosRoutes {
 
@@ -9,7 +10,11 @@ class ArticulosRoutes {
     }
 
     config(): void{
-        this.router.get('/', (req, res ) => res.send('hello articulos'))
+        this.router.get('/',articulosController.articulos);
+        this.router.get('/:id',articulosController.getOne);
+        this.router.post('/',articulosController.create);
+        this.router.delete('/:id',articulosController.delete);
+        this.router.put('/:id',articulosController.update);
     }
 }
 
