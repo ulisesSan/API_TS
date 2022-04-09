@@ -5,5 +5,5 @@ class IndexController {
     index(req, res) {
         res.json({ text: 'Api responde adecuadamente' });
     }
-}
+} 
 exports.indexController = new IndexController();
