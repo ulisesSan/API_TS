@@ -1,7 +1,7 @@
 import {Router} from 'express'
 import { clientesController} from '../controllers/clientesController'
 
-class ArticulosRoutes {
+class ClientesRoutes {
 
     public router: Router = Router();
 
@@ -17,3 +17,6 @@ class ArticulosRoutes {
         this.router.put('/:id', clientesController.update);
     }
 }
+
+const clientes = new ClientesRoutes();
+export default clientes.router;

@@ -5,9 +5,9 @@ import db from '../dataBase'
 class ClientesController {
 
     public async clientes(req: Request, res: Response ){
-        const productos = await db.query('SELECT * FROM clientes');
+        const clientes = await db.query('SELECT * FROM clientes');
 
-        res.json({productos});
+        res.json({clientes});
     }
 
     public async getOne(req: Request, res: Response ){

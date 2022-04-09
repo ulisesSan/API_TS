@@ -4,6 +4,7 @@ import cors from 'cors';
 
 import  indexRoutes from './routes/indexRoutes';
 import articulosRoutes from './routes/articulosRoutes';
+import clientesRoutes from './routes/clientesRoutes';
 
 class Server{
 
@@ -26,6 +27,7 @@ class Server{
     routes(): void{
         this.app.use('/',indexRoutes)
         this.app.use('/articulos',articulosRoutes)
+        this.app.use('/clientes',clientesRoutes)
     }
     //Con el puerto asignado se le dice al modulo app que escuche un puerto por defecto o use el puerto tres mil
     start(): void {

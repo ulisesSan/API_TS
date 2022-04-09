@@ -8,6 +8,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const articulosRoutes_1 = __importDefault(require("./routes/articulosRoutes"));
+const clientesRoutes_1 = __importDefault(require("./routes/clientesRoutes"));
 class Server {
     //el constructor ayuda a inicializar diferentes partes que se necesitan para el servidor 7u7
     constructor() {
@@ -26,6 +27,7 @@ class Server {
     routes() {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/articulos', articulosRoutes_1.default);
+        this.app.use('/clientes', clientesRoutes_1.default);
     }
     //Con el puerto asignado se le dice al modulo app que escuche un puerto por defecto o use el puerto tres mil
     start() {
