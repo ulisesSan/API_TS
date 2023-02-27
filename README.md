@@ -1,2 +1,1 @@
 # crud
-Angular + mysql
